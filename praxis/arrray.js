@@ -16,3 +16,16 @@
 document.getElementById('agente').innerHTML = array
 
 
+// sord ordena por los nuemros
+
+console.log(array.sort())
+
+
+// acceder al ultimo elemento
+
+console.log(array[array.length-1])
+
+for (let i = 0; i < array.length; i++) {
+  const element =  array[index];
+   
+}
