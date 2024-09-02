@@ -1,8 +1,5 @@
 
-const temperatura =76
-
-
-
+const temperatura = 76
 
 function transformarACelsius(fahrenheit){
 

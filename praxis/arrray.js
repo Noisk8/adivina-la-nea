@@ -1,31 +1,36 @@
-// un array o arreglo es una lista de objetos strings numbers booleanod
+// // un array o arreglo es una lista de objetos strings numbers booleanod
 
-//podemos acceder a el apartir del indice
-
-
- const array = new Array (5)
+// //podemos acceder a el apartir del indice
 
 
- array [0] ='hola'
- array [1] ='como'
- array [2] ='estas'
- array [3] ='hoy'
- array [4] ='hoy'
+//  const array = new Array (5)
 
 
-document.getElementById('agente').innerHTML = array
+//  array [0] ='hola'
+//  array [1] ='como'
+//  array [2] ='estas'
+//  array [3] ='hoy'
+//  array [4] ='hoy'
 
 
-// sord ordena por los nuemros
-
-console.log(array.sort())
+// document.getElementById('agente').innerHTML = array
 
 
-// acceder al ultimo elemento
+// // sord ordena por los nuemros
 
-console.log(array[array.length-1])
+// console.log(array.sort())
 
-for (let i = 0; i < array.length; i++) {
-  const element =  array[index];
-   
+
+// // acceder al ultimo elemento
+
+// console.log(array[array.length-1])
+
+const bareto = ['despertar', 'comer', 'estudiar', 'dormir']
+
+let texto = ''
+for (let index = 0; index < bareto.length; index++) {
+  texto += "<li>" + bareto[index] + '</li>'
 }
+
+document.getElementById('nuestra').innerHTML = texto
+   
