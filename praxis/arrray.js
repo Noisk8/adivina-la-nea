@@ -25,12 +25,20 @@
 
 // console.log(array[array.length-1])
 
-const bareto = ['despertar', 'comer', 'estudiar', 'dormir']
+// const bareto = ['despertar', 'comer', 'estudiar', 'dormir']
 
-let texto = ''
-for (let index = 0; index < bareto.length; index++) {
-  texto += "<li>" + bareto[index] + '</li>'
-}
+// let texto = ''
+// for (let index = 0; index < bareto.length; index++) {
+//   texto += "<li>" + bareto[index] + '</li>'
+// }
 
-document.getElementById('nuestra').innerHTML = texto
+// document.getElementById('nuestra').innerHTML = texto
    
+
+// sirve para ir agregando elementos al final del array
+
+const porro =['cuero','filtro','bareta']
+
+porro[porro.length] = 'upa'
+
+console.log(porro)
