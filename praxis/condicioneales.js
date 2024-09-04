@@ -65,3 +65,39 @@ if (edad >= 18) {
 } else {
   console.log("No puedes viajar porque eres menor de edad");
 }
+
+
+// VERSION SENCILLA 
+
+
+if(condicion){
+código
+}
+
+
+
+// VERSION COMPLETA
+
+if (condicion){
+  codigo
+} else{
+  codigo
+}
+
+
+
+// VERSIÓN MULTIPLE
+
+if (condicion){
+  código
+} else if(otracondición) {
+  codigo
+} else {
+código
+}
+
+
+
+
+
+
