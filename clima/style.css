@@ -1,38 +1,48 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
-  }
-  
-  .contenedor {
-    max-width: 500px;
+    font-family: 'Arial', sans-serif;
+    background-color: #052841; /* Color de fondo más claro */
+}
+
+.contenedor {
+    max-width: 600px; /* Ancho máximo aumentado */
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px; /* Más espacio de relleno */
     text-align: center;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    color: #333333;
-  }
-  
-  input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    width: 70%;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
+    background-color: #0a3758;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    border-radius: 10px; /* Bordes redondeados */
+    border-color: #ffffff;
+}
+
+h1 {
+    color: #ffffff; /* Color del texto cambiado */
+}
+
+input[type="text"] {
+    padding: 12px; /* Más espacio de relleno */
+    font-size: 18px; /* Tamaño de fuente aumentado */
+    width: 75%; /* Ancho aumentado */
+    border: 1px solid #00796b; /* Borde añadido */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button {
+    padding: 12px 25px; /* Más espacio de relleno */
+    font-size: 18px; /* Tamaño de fuente aumentado */
+    background-color: #00796b; /* Color de fondo cambiado */
     color: #ffffff;
     border: none;
     cursor: pointer;
-  }
-  
-  #datosClima {
-    margin-top: 20px;
-    font-size: 18px;
-  }
-  
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #004d40; /* Color de fondo al pasar el ratón */
+}
+
+#datosClima {
+    margin-top: 25px; /* Más espacio superior */
+    font-size: 20px; /* Tamaño de fuente aumentado */
+    color: #ffffff; /* Color del texto cambiado */
+}
