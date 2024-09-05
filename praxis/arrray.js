@@ -2,9 +2,7 @@
 
 // //podemos acceder a el apartir del indice
 
-
 //  const array = new Array (5)
-
 
 //  array [0] ='hola'
 //  array [1] ='como'
@@ -12,14 +10,11 @@
 //  array [3] ='hoy'
 //  array [4] ='hoy'
 
-
 // document.getElementById('agente').innerHTML = array
-
 
 // // sord ordena por los nuemros
 
 // console.log(array.sort())
-
 
 // // acceder al ultimo elemento
 
@@ -33,12 +28,11 @@
 // }
 
 // document.getElementById('nuestra').innerHTML = texto
-   
 
 // sirve para ir agregando elementos al final del array
 
-const porro =['cuero','filtro','bareta']
+const porro = ["cuero", "filtro", "bareta"];
 
-porro[porro.length] = 'upa'
+porro[porro.length] = "upa";
 
-console.log(porro)
+console.log(porro);

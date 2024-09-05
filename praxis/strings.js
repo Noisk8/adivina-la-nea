@@ -1,97 +1,74 @@
-
-
 // para saltear  un ' let's
 
-let string = ' lest\'s do it'
-
+let string = " lest's do it";
 
 // comillas
 
-let comilla = 'el parcero dice: \'que chimba js\''
+let comilla = "el parcero dice: 'que chimba js'";
 
+// \n es un sato de linea
+let saltoDeLinea = "esto esta rriba \n esto esta abajo";
 
+// \b back space borra un esacio
 
-// \n es un sato de linea 
-let saltoDeLinea = 'esto esta rriba \n esto esta abajo'
-
-
-// \b back space borra un esacio 
-
-// \t es un tabulador 
-
+// \t es un tabulador
 
 // contar letras
 
-let contadorLetras = 'Murciélago'
+let contadorLetras = "Murciélago";
 
-console.log(contadorLetras.length)
+console.log(contadorLetras.length);
 
+// slice (comienzo, final ) | substring
 
+let texto = "Educación";
 
-// slice (comienzo, final ) | substring 
+let resultado = texto.slice(4, 7);
 
+console.log(resultado);
 
-let texto = 'Educación'
+// reemplazar texto
 
-let resultado = texto.slice(4,7)
+let texto1 = "La educación es muy importatnte en colombia";
 
-console.log(resultado)
+const esultado = texto1.replace("colombia", "el mundo");
 
-// reemplazar texto 
+console.log(esultado);
 
-let texto1 = 'La educación es muy importatnte en colombia'
+const texto2 = "La educación es muy importante en colombia";
 
-const esultado = texto1.replace('colombia', 'el mundo')
+const enzo = texto2.toLocaleUpperCase();
 
-console.log(esultado)
+console.log(enzo);
 
+const pailas = texto1.concat(texto2);
 
-const texto2 = 'La educación es muy importante en colombia'
+console.log(pailas);
 
-const enzo = texto2.toLocaleUpperCase()
+// borrar espacios adelate y atras
 
-console.log(enzo)
+const texto3 =
+  "            La educación es muy importante en colombia           ";
 
+const lacal = texto3.trim();
 
-
-const pailas = texto1.concat(texto2)
-
-console.log(pailas)
-
-
-// borrar espacios adelate y atras 
-
-const texto3 = '            La educación es muy importante en colombia           ' 
-
-const lacal =texto3.trim()
-
-
-console.log(lacal)
+console.log(lacal);
 
 // inicio  trimStart() | final trimEnd()
 
+//  split
 
+const texto5 = "ste texto te lo manndo.  Este textono esmenjor.   mejoras ";
 
+const refafi = texto.split(". ");
 
-//  split 
+console.log(refafi);
 
-
-const texto5 ='ste texto te lo manndo.  Este textono esmenjor.   mejoras '
-
-const refafi = texto.split('. ')
-
-console.log(refafi)
-
-
-// separar uno al lado del otro 
-
+// separar uno al lado del otro
 
 // si el split esta vacio separa por letra
-const texto6 = 'separame'
+const texto6 = "separame";
 
-const yaper =texto6.split('')
+const yaper = texto6.split("");
 
-console.log(yaper)
-
-
-
+console.log(yaper);

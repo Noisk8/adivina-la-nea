@@ -1,9 +1,8 @@
 // let conjunto  = Set (['Pedro','Juan','Maria'])
 
-// Agregar 
+// Agregar
 
 // conjunto.add('Consuelo')
-
 
 // conjunto.delete('Pedro')
 
@@ -13,10 +12,7 @@
 
 //  console.log(conjunto)
 
-
 // console.log(conjunto)
-
-
 
 // let array = ['Cama','Armario','Cama', 'Escritorio']
 
@@ -24,9 +20,8 @@
 //     console.log(muebles)
 // }
 
-
 // function comparrUnaSolaUnidad(muebles){
-    
+
 // let unicaUnidad = new Set(muebles)
 //     console.log(unicaUnidad)
 
@@ -34,15 +29,11 @@
 
 // comprar(array)
 
-
-
 // MAPS
 // son un conjunto pares de clave valor pero muy diferentes a los objetos, pero se usan para otro tipo de variables
 
-
 let map = new Map([
-
-    ['CPC', 30],
-    ['Tablet', 60],
-    ['Teclado', 50],
-])
+  ["CPC", 30],
+  ["Tablet", 60],
+  ["Teclado", 50],
+]);

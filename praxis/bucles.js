@@ -1,13 +1,10 @@
 // Los bucles sirve o se usan generalmente para recorer arryas
 
-
 // let tecnologias = ['html','css','javascript', 'react']
 
 // for( tecnologia of tecnologias){
 //     console.log(tecnologia)
 // }
-
-
 
 // let texto = ''
 
@@ -17,11 +14,10 @@
 //     texto += ', '
 // }
 //     seleccionable.textContent = texto
-    
+
 // }
 
-
-// Recorrer  objetos 
+// Recorrer  objetos
 
 // const alumno = {
 //     nombre: 'Ricardo',
@@ -33,16 +29,13 @@
 //     console.log(alumno[clave])
 // }
 
-
 // let numeros = [1,2,3,4,5]
 
 //  numeros.forEach(numero => {
 //      console.log(numero)
-//  }) 
+//  })
 
-
-
-// let edad = 0 
+// let edad = 0
 
 // while (edad < 18 ){
 //     console.log(`Tienes ${edad} años y aun eres peque`)
@@ -52,8 +45,7 @@
 
 // console.log(`Tienes ${edad} años y ya eres mayor de edad`)
 
-
-// let  edad = 0 
+// let  edad = 0
 
 // do{
 //     {console.log(`Tienes ${edad} años y aun eres peque`)
@@ -65,16 +57,12 @@
 
 // console.log(`Tienes ${edad} años y ya eres mayor de edad`)
 
+let edad = 0;
 
-
-
-let edad = 0
-
-
-while (edad < 30){
-    console.log(edad)
-    edad++;
-    if (edad == 25) break;
+while (edad < 30) {
+  console.log(edad);
+  edad++;
+  if (edad == 25) break;
 }
 
-console.log(`saliste del bucle tienes ${edad} años`)
+console.log(`saliste del bucle tienes ${edad} años`);

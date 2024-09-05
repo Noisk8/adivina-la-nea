@@ -1,7 +1,7 @@
 // Add JS her
-const variable = "mera vuelta"
+const variable = "mera vuelta";
 
-console.log(variable + 1)
+console.log(variable + 1);
 
 /*
 
@@ -12,5 +12,3 @@ var | se puede declarar sin valor, se puede reasignar, se puede sedeclarar
 
 let | se puede declarar sin valor, se puede se reasignar, no se puede redeclarar 
 */
-
-
