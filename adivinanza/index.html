@@ -5,18 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Juego de adivinar el número</title>
 </head>
 
-<body>
-    <h1>Adivina el número</h1>
-    <p>Introduce un número entre 1 y 100:</p>
-    <input type="number" id="numeroEntrada">
-    <button onclick="chequearResultado()">Comprobar</button>
-    <p id="mensaje"> A jugar !</p>
-    <h3> Cantidad de intentos:</h3>
-    <p id="intento"> 0 </p>
+<header class="bg-gray-800 p-6 border-b-2 border-green-500 w-full top-0 z-50">
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold my-8 text-white">Adivinar el número</h1>
+    </div>
+</header>
+
+<body class="bg-gray-900 text-white text-center">
+    <div class="container mx-auto px-4 pt-8">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-2xl border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
+            <h1 class="text-2xl font-semibold mb-4 text-green-500">Adivina el número</h1>
+            <p>Introduce un número entre 1 y 100:</p>
+            <input type="number" id="numeroEntrada" class="p-1 text-lg bg-gray-700 text-white border-2 border-green-500 rounded">
+            <button onclick="chequearResultado()" class="mt-4 bg-green-500 text-white py-2 px-4 rounded shadow-lg hover:bg-green-600 transition-colors duration-300">Comprobar</button>
+            <p id="mensaje" class="text-gray-300 font-sans text-xl mt-5">¡A jugar!</p>
+            <h3 class="text-gray-300 font-sans">Cantidad de intentos:</h3>
+            <p id="intento" class="text-gray-300 font-sans text-xl">0</p>
+        </div>
+    </div>
 
     <script src="/adivinanza/script.js"></script>
 </body>

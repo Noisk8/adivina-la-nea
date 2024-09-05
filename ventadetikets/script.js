@@ -45,4 +45,28 @@ function mostrarContenido(contenido) {
   tituloElemento.innerHTML = contenido.titulo;
   subtituloElemento.innerHTML = contenido.subtitulo;
   parrafoElemento.innerHTML = contenido.parrafo;
+  precioElemento.classList.add("ticket");
 }
+
+
+let enlacesTarjetas = document.querySelectorAll(".tarjeta a");
+
+// agregar evento click a cada enlace de las tarjetas
+enlacesTarjetas.forEach(function (enlace) {
+    enlace.addEventListener("click", function () {
+        // REMOVER ACTIVO de todos los enlaces
+        enlacesTarjetas.forEach(function (enlace) {
+            enlace.classList.remove("active");
+        });
+        // AGREGAR ACTIVO al enlace actual
+        this.classList.add("active");
+
+        // obtenemos el contenido de la ciudad seleccionada
+        let contenido = obtenerContenido(this.textContent);
+        // actualizamos el contenido del DOM con los datos de la ciudad
+        tituloElemento.innerHTML = contenido.titulo;
+        subtituloElemento.innerHTML = contenido.subtitulo;
+        parrafoElemento.innerHTML = contenido.parrafo;
+        precioElemento.innerHTML = contenido.precio;
+    });
+});

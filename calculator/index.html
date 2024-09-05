@@ -5,37 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <h1>Calculator Machine</h1>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+    <div class="text-center">
+        <h1 class="text-4xl font-bold mb-8">Calculator Machine</h1>
 
-    <div class="calculadora">
-        <input type="text" id="pantalla" readonly>
-        <br>
-        <input type="button" value="1" onclick=" agregar('1')">
-        <input type="button" value="2" onclick=" agregar('2')">
-        <input type="button" value="3" onclick=" agregar('3')">
-        <input type="button" value="+" onclick=" agregar('+')">
-        <br>
-        <input type="button" value="4" onclick=" agregar('4')">
-        <input type="button" value="5" onclick=" agregar('5')">
-        <input type="button" value="6" onclick=" agregar('6')">
-        <input type="button" value="-" onclick=" agregar('-')">
-        <br>
-        <input type="button" value="7" onclick=" agregar('7')">
-        <input type="button" value="8" onclick=" agregar('8')">
-        <input type="button" value="9" onclick=" agregar('9')">
-        <input type="button" value="*" onclick=" agregar('*')">
-        <br>
-        <input type="button" value="0" onclick=" agregar('0')">
-        <input type="button" value="." onclick=" agregar('.')">
-        <input type="button" value="/" onclick=" agregar('/')">
-        <input type="button" value="=" onclick=" calcular()">
-        <br>
-        <input type="button" value="C" onclick=" borrar()">
+        <div class="calculadora bg-gray-900 p-6 rounded-lg shadow-2xl border-4 border-green-700">
+            <input type="text" id="pantalla" class="w-full p-2 mb-4 text-right text-lg bg-gray-700 text-white border-2 border-green-500 rounded" readonly>
+            <div class="grid grid-cols-4 gap-2">
+                <input type="button" value="1" class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="agregar('1')">
+                <input type="button" value="2" class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="agregar('2')">
+                <input type="button" value="3" class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="agregar('3')">
+                <input type="button" value="+" class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="agregar('+')">
+                <input type="button" value="4" class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="agregar('4')">
+                <input type="button" value="5" class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="agregar('5')">
+                <input type="button" value="6" class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="agregar('6')">
+                <input type="button" value="-" class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="agregar('-')">
+                <input type="button" value="7" class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="agregar('7')">
+                <input type="button" value="8" class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="agregar('8')">
+                <input type="button" value="9" class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="agregar('9')">
+                <input type="button" value="*" class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="agregar('*')">
+                <input type="button" value="0" class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="agregar('0')">
+                <input type="button" value="." class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="agregar('.')">
+                <input type="button" value="/" class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="agregar('/')">
+                <input type="button" value="=" class="p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="calcular()">
+                <input type="button" value="C" class="col-span-4 p-4 bg-gray-900 text-white border-2 border-green-500 rounded hover:bg-gray-700 cursor-pointer" onclick="borrar()">
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
