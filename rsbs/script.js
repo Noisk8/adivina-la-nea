@@ -1,5 +1,5 @@
 // importamos las ciudades desde el archivo ciudades.js
-import { barcelona, roma, paris, londres } from "./ciudades.js";
+import { V1, V2, V4, V3 } from "./ciudades.js";
 
 // seleccionamos todos los enlaces de la página
 let enlaces = document.querySelectorAll("a");
@@ -8,6 +8,7 @@ let tituloElemento = document.getElementById("titulo");
 let subtituloElemento = document.getElementById("subtitulo");
 let parrafoElemento = document.getElementById("parrafo");
 let precioElemento = document.getElementById("Precio");
+let enlaceElemento = document.getElementById("enlace");
 
 // agregar evento click a cada enlace
 enlaces.forEach(function (enlace) {
@@ -26,16 +27,17 @@ enlaces.forEach(function (enlace) {
     subtituloElemento.innerHTML = contenido.subtitulo;
     parrafoElemento.innerHTML = contenido.parrafo;
     precioElemento.innerHTML = contenido.precio;
+    enlaceElemento.innerHTML = contenido.enlace;
   });
 });
 
 // función para obtener el contenido de la ciudad seleccionada
 function obtenerContenido(enlace) {
   let contenido = {
-    Barcelona: barcelona,
-    Roma: roma,
-    Paris: paris,
-    Londres: londres,
+    V1: V1,
+    V2: V2,
+    V4: V4,
+    V3: V3,
   };
   return contenido[enlace];
 }
