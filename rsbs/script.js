@@ -1,5 +1,5 @@
 // importamos las ciudades desde el archivo ciudades.js
-import { V1, V2, V4, V3 } from "./ciudades.js";
+import { V1, V2, V4, V3, V5, V6, V7, V8} from "./ciudades.js";
 
 // seleccionamos todos los enlaces de la página
 let enlaces = document.querySelectorAll("a");
@@ -38,6 +38,11 @@ function obtenerContenido(enlace) {
     V2: V2,
     V4: V4,
     V3: V3,
+    V5: V5,
+    V6: V6,
+    V7: V7,
+    V8: V8,
+  
   };
   return contenido[enlace];
 }
